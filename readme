@@ -1,2 +1,4 @@
 #A Python test repository
 
+git remote set-url origin git@github.com:zhujunliang-pen/Python-Test.git
+
