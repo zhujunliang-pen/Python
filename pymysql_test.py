@@ -7,7 +7,7 @@ try:
     'user': 'root',
     'password': 'bill',
     'port': 3306,
-    'database': 'mydb',
+    'database': 'testdb',
     'charset': 'utf8'
     }   
     #db = pymysql.connect("localhost","root","bill","mydb" )    
@@ -17,7 +17,7 @@ try:
     cursor = db.cursor()
  
     # 使用 execute()  方法执行 SQL 查询 
-    rowcount = cursor.execute("SELECT * from user;")
+    rowcount = cursor.execute("SELECT * from users;")
     print(rowcount)#or cursor.rowcount
     
     for data in cursor:

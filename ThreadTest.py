@@ -21,6 +21,7 @@ class myThread(threading.Thread):
 def print_time(threadName, delay, counter):
     while counter:        
         if exitFlag:
+			# f 或 F 开头的字符串，其中以 {} 包含的表达式会进行值替换
             print(f"{threadName}: 中断 ExitFlag = {exitFlag}")
             exit()
         time.sleep(delay)        
@@ -115,7 +116,7 @@ def test1():
 	thread1.start()
 	thread2.start()	
 	print("2 thread start, 但是运行是乱序")
-	time.sleep(4)
+	time.sleep(2)
 	global exitFlag
 	exitFlag = 1
 	thread1.join()

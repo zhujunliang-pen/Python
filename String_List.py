@@ -72,6 +72,9 @@ print(r"f'{1+2}' =", f'{1+2}')
 t0 = time.time()
 time.sleep(1)
 name = 'processing'
+#f-strings 是指以f或F 开头的字符串，其中以 {}包含的表达式会进行值替换。
+#在字符串前加r可防止字符串转义
+#u/U:表示unicode字符串
 print(f'{name} done in {time.time() - t0:.2f} s')
 u =u"我是含有中文字符组成的字符串。"
 u8 = u.encode('utf-8')
