@@ -72,4 +72,4 @@ def file_path(file_dir):
         print(root, end=' ')    # 当前目录路径
         #print(dirs, end=' ')    # 当前路径下的所有子目录
         #print(files)            # 当前目录下的所有非目录子文件
-file_path("D:\\bill")	
+file_path("\\")	
