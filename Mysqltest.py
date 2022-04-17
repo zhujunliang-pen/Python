@@ -12,16 +12,15 @@ import pymysql
 mydb = pymysql.connect(
     host = "localhost", 
     user = "root", 
+    port = 3306,
     password = "bill", 
     database ="testdb")
 #print(mydb)
 
 mycursor = mydb.cursor()
-"""
-[[mycursor.execute("show tables")
+mycursor.execute("show tables")
 for x in mycursor:
     print(x)
-    """
 mycursor.execute("CREATE TABLE if not exists sites (name VARCHAR(20), url VARCHAR(255), UNIQUE INDEX name_UNIQUE (name ASC) VISIBLE);")
 mycursor.execute('show fields from sites like "id";')
 mycursor.fetchone()

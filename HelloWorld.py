@@ -21,7 +21,7 @@ World"""
 import sys
  
 print("sys.path", sys.path)
-print("sys.winver", sys.winver)
+#print("sys.winver", sys.winver)
 print("sys.version", sys.version)
 print("sys.version_info", sys.version_info)
 print('================Python import mode==========================')

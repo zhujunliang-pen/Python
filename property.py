@@ -24,5 +24,7 @@ s.score = 90
 s1 = Student('')
 s1.score = 89
 s1.age = 10
+print(s)
+print(repr(s))
 print(s1)
 print(repr(s1))

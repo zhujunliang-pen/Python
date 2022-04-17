@@ -15,7 +15,7 @@ closure()
 
 import functools
 #decorator 函数装饰器
-#arg  一个参数 ，不知有多少个参赛*args,  健值对参赛**kwargs{k1=v1, k2=v2}
+#arg  一个参数 ，不知有多少个参数*args,  健值对参数**kwargs{k1=v1, k2=v2}
 def log(func):
     @functools.wraps(func)
     def wrapper(*args, **kwargs):
@@ -70,6 +70,7 @@ def logit(func):
     @functools.wraps(func)
     def with_logging(*args, **kwargs):
         print(func.__name__ + " was called")
+        print("args: {}".format(*args))
         return func(*args, **kwargs)
     return with_logging
  
